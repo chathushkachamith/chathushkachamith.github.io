@@ -66,6 +66,27 @@
       font-size: 0.95rem;
     }
     .contact-box p { margin-bottom: 0.35rem; color: var(--text); }
+    .project-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.85rem;
+    }
+    .project-title {
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+    .project-meta {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.45rem;
+    }
+    .project-card p {
+      margin-bottom: 0;
+    }
   </style>
 </head>
 <body>
@@ -90,7 +111,23 @@
       <li><strong>Embedded Hardware Engineering:</strong> Microcontroller hardware integration (STM32, ESP32, Nordic nRF), sensor acquisition, and industrial communication interfaces (RS485, RS232, CAN, SPI, I2C).</li>
       <li><strong>Manufacturing Deliverables:</strong> Complete fabrication and assembly packages including Gerber files, NC drill files, pick-and-place coordinates, and verified Bill of Materials (BOM).</li>
     </ul>
+    <h2>Selected Circuit &amp; PCB Design Projects</h2>
 
+    <div class="project-card">
+      <div class="project-title">Wearable Quad-Channel Tactile Counter (Quad Clicker)</div>
+      <div class="project-meta">Wearable Embedded Hardware &bull; Dual-Rail Power Design &amp; Battery Management</div>
+      <p>
+        In fast-paced environments such as hand rehabilitation therapy, behavioral auditing, and live sports or workflow tracking, operators often need to log four distinct metrics simultaneously without breaking eye contact. Secured to the hand with a Velcro strap and stabilized by the thumb, this device maps four dedicated tactile switches directly to the remaining four fingers for eyes-free, muscle-memory tallying while an integrated dual 4-digit LED display shows each finger's live count at a glance. The custom PCB combines wireless microcontroller processing, hardware-debounced inputs, separate voltage rails to isolate logic from display switching noise, and USB-C rechargeable battery management with cell protection and low-battery monitoring.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <div class="project-title">Wearable Wireless Collar Microphone for Sports Scoreboards</div>
+      <div class="project-meta">Custom Wearable PCB &bull; Voice-Band Audio Front-End &amp; Noise Rejection</div>
+      <p>
+        During active court and field sports, pausing play to operate a handheld remote interrupts match rhythm, while generic headsets shift during sudden movement or saturate under wind and crowd noise. This clip-on collar microphone was engineered to position voice-command capture at a consistent distance from the speaker's mouth without occupying their hands, maximizing the speech-to-noise ratio for reliable, hands-free scoreboard updates in loud open-air venues. The hardware integrates a low-noise voice-band audio front-end tuned for ambient noise rejection, wireless transmission, and compact rechargeable power management inside a mechanically constrained wearable PCB layout.
+      </p>
+    </div>
     <h2>Academic Background</h2>
     <ul>
       <li><strong>MSc in Control and Instrumentation</strong> — University of Peradeniya (2020 – 2025)</li>
